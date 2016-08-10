@@ -14,3 +14,7 @@ dependencies:
 database:
   override:
     - echo "no database setup"
+
+test:
+  override:
+    - docker run -d -p 5000:5000 -e TEST=1 frobini/fro-rails-sandbox:$CIRCLE_SHA1 ; sleep 10
