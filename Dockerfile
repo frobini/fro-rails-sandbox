@@ -1,0 +1,1 @@
+FROM phusion/passenger-ruby22:latest
